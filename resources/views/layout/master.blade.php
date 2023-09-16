@@ -24,5 +24,7 @@
     <footer>
         @include('layout.views.footer')
     </footer>
+
+<script src="{{ asset('js/jquery.min.js') }}"></script>
 </body>
 
