@@ -1,5 +1,6 @@
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="pt-BR">
 <head>
+    <html >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +14,15 @@
 </head>
 
 <body>
+{{--    HEADER--}}
+    <header>
+        @include('layout.views.header')
+    </header>
+
     @yield('content')
+
+    <footer>
+        @include('layout.views.footer')
+    </footer>
 </body>
 
