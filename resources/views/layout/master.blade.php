@@ -19,7 +19,10 @@
         @include('layout.views.header')
     </header>
 
-    @yield('content')
+    <div class="h-100">
+        @yield('content')
+    </div>
+
 
     <footer>
         @include('layout.views.footer')
