@@ -3,7 +3,7 @@
 <div class="pre-header">
     <div class="bg-bs d-flex flex-wrap justify-content-between">
         <div class="name d-flex flex-row align-items-center">
-            <img src="{{ asset('/images/logo.jpeg') }}" class="h-55px" alt="Logo">
+            <img src="{{ asset('/images/logo.jpeg') }}" class="h-55px" alt="Logo" style="height: 55px">
             <span class="fs-2 text-white align-self-center">BOOKSTAR</span>
         </div>
         <div class="align-self-center">
