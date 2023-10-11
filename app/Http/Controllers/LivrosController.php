@@ -16,4 +16,14 @@ class LivrosController extends Controller
             'livros' => $livros
         ]);
     }
+
+    public function detalhes($idLivro) {
+        $livro = Livro::where('id_livro', $idLivro)->with('genero')->with('autor')->first();
+        $anoLancamento = $livro->ano_lancamento_formatado;
+
+        return view('livros.detalhes')->with([
+            'livro' => $livro,
+            'anoLancamento' => $anoLancamento
+        ]);
+    }
 }

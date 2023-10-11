@@ -35,6 +35,7 @@ Route::middleware('auth')->group(function () {
 
 Route::prefix('livros')->group(function() {
     Route::get('/listagem', [LivrosController::class, 'index'])->name('livros.index');
+    Route::get('/{id_livro}', [LivrosController::class, 'detalhes'])->name('livros.detalhes');
 });
 
 require __DIR__.'/auth.php';

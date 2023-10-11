@@ -1,4 +1,4 @@
-<div class="col-6 col-sm-4 col-md-3 h-25 cursor-pointer" data-id-livro="{{$livro->id_livro}}">
+<div class="col-6 col-sm-4 col-md-3 h-25 cursor-pointer livro" @click="handleLivroClick" data-id-livro="{{$livro->id_livro}}">
     <div class="card shadow-sm">
         <img class="card-img-top w-100" src="{{$livro->imagem_url}}" alt="" style="height: 400px;">
         <div class="card-body">

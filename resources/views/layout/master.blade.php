@@ -1,6 +1,6 @@
 <html lang="pt-BR">
 <head>
-    <html >
+    <html>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,19 +15,23 @@
 
 <body>
 {{--    HEADER--}}
-    <header>
-        @include('layout.views.header')
-    </header>
+<header>
+    @include('layout.views.header')
+</header>
 
-    <div class="h-100">
-        @yield('content')
-    </div>
+<div class="h-100" id="app">
+    @yield('content')
+</div>
 
 
-    <footer>
-        @include('layout.views.footer')
-    </footer>
+<footer>
+    @include('layout.views.footer')
+</footer>
 
-<script src="{{ asset('js/jquery.min.js') }}"></script>
+@vite('resources/js/app.js')
+<script>
+
+</script>
+
 </body>
 
