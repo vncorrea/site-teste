@@ -1,8 +1,8 @@
 <template>
-    <div class="card ps-0 d-flex flex-row border border-2 border-secondary w-100">
+    <div class="card ps-0 d-flex flex-row border-2 border-secondary w-100">
         <div class="col-2">
             <div class="w-100 foto_livro">
-                <img :src="livro.imagem_url" alt="">
+                <img class="livro-foto" :src="livro.imagem_url" alt="">
             </div>
         </div>
         <div class="col-10">
